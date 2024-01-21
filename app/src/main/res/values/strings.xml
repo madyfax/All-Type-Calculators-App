@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">FinalCalculator</string>
+    <string-array name="unit_types">
+        <item>Centimeters to Inches</item>
+        <item>Inches to Centimeters</item>
+        <item>Meters to Feet</item>
+        <item>Feet to Meters</item>
+        <item>Kilograms to Pounds</item>
+        <item>Pounds to Kilograms</item>
+        <item>Celsius to Fahrenheit</item>
+        <item>Fahrenheit to Celsius</item>
+        <item>Seconds to Minutes</item>
+        <item>Minutes to Seconds</item>
+        <item>USD to EUR</item>
+        <item>EUR to USD</item>
+        <!-- Add more unit types as needed -->
+    </string-array>
+
+    <string-array name="currencies_array">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>CAD</item>
+        <item>AUD</item>
+        <item>CHF</item>
+        <item>CNY</item>
+        <item>INR</item>
+        <item>BRL</item>
+        <item>RUB</item>
+        <item>NZD</item>
+        <item>SGD</item>
+        <item>MXN</item>
+        <item>ZAR</item>
+        <item>SEK</item>
+        <!-- Add more currencies as needed -->
+    </string-array>
+
+
+    <string-array name="tenure_options">
+        <item>Yearly</item>
+        <item>Monthly</item>
+    </string-array>
+
+
+    <string name="loan_amount">Loan Amount</string>
+    <string name="interest_rate">Interest Rate</string>
+    <string name="loan_tenure">Loan Tenure</string>
+    <string name="moratorium_period">Moratorium Period</string>
+    <string name="no_of_emis">No. of EMIs Already Paid</string>
+    <string name="select_option">Select Your Option</string>
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+    <string name="total_interest">Total Interest Payable: </string>
+    <string name="total_principle">Total Principle: </string>
+    <string name="overall_tenure">Overall Tenure: </string>
+    <string name="total_payment">Total Payment: </string>
+    <string name="emi_result">EMI (Monthly Payment): </string>
+    <string name="option_prompt">--Select Option--</string>
+
+
+</resources>

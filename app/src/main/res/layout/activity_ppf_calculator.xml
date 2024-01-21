@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PPF Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/amountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Amount of Deposit"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/interestRateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amountEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Rate of Interest (in %)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/tenureEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/interestRateEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Tenure (in years)"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/modeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tenureEditText"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioFixedYearly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fixed Yearly Amount" />
+
+        <RadioButton
+            android:id="@+id/radioFixedMonthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fixed Monthly Amount" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/maturityDurationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modeRadioGroup"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Maturity Duration (15, 20, 25, 30)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maturityDurationEditText"
+        android:layout_marginTop="16dp"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:layout_marginTop="16dp"
+        android:text="Reset" />
+
+    <TextView
+        android:id="@+id/investmentAmountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resetButton"
+        android:layout_marginTop="16dp"
+        android:text="Investment Amount: " />
+
+    <TextView
+        android:id="@+id/totalInterestTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/investmentAmountTextView"
+        android:layout_marginTop="16dp"
+        android:text="Total Interest Value: " />
+
+    <TextView
+        android:id="@+id/maturityValueTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalInterestTextView"
+        android:layout_marginTop="16dp"
+        android:text="Maturity Value: " />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maturityValueTextView"
+        android:layout_marginTop="20dp"
+        android:text="Note: The actual interest rate and investment calculations may vary based on the bank or financial institution's rules and regulations. Always consult a financial expert or refer to official documents for precise calculations and investment decisions." />
+</RelativeLayout>

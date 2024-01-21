@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinalCalculator"
+        tools:targetApi="31">
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.finalcalculator.app.BasicCalculator" />
+        <activity android:name="com.finalcalculator.app.ScientificCalculatorActivity" />
+        <activity android:name="com.finalcalculator.app.CurrencyCalculator" />
+        <activity android:name="com.finalcalculator.app.UnitConversionActivity" />
+        <activity android:name="com.finalcalculator.app.Under_EmiCalculator_Activity" />
+        <activity android:name="com.finalcalculator.app.EmiCalculationActivity" />
+        <activity android:name="com.finalcalculator.app.CompareLoanActivity" />
+        <activity android:name="com.finalcalculator.app.Under_LoanCalculator_Activity" />
+        <activity android:name="com.finalcalculator.app.Loan_Amt_Calc_Activity" />
+        <activity android:name="com.finalcalculator.app.Loan_Tenure_Calculator" />
+        <activity android:name="com.finalcalculator.app.Loan_interest_rate_Calculator" />
+        <activity android:name="com.finalcalculator.app.Mortatorium_calculator_Activity" />
+        <activity android:name="com.finalcalculator.app.Under_Banking_Calculation_Activity" />
+        <activity android:name="com.finalcalculator.app.Currency_Calculator_Activity" />
+        <activity android:name="com.finalcalculator.app.PPF_Calculator_Activity" />
+        <activity android:name="com.finalcalculator.app.SimpleCompoundActivity" />
+    </application>
+
+</manifest>
